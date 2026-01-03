@@ -1,0 +1,101 @@
+# --- OS Specific ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Editor / IDE ---
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# --- Build & Dependencies ---
+node_modules/
+dist/
+build/
+bin/
+obj/
+out/
+*.log
+*.tmp
+*.bak
+
+# --- Environment & Secrets ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+.vagrant/
+
+# --- Pre-commit ---
+.python-version
+.pre-commit-cache/
+
+# ==========================================
+# Node.js Specific
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm
+.eslintcache
+.stylelintcache
+.next
+.nuxt
+out/
+dist/
+
+# ==========================================
+# Python Specific
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv
+venv/
+ENV/
+env/
+.env
+
+# Distribution / packaging
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing / Coverage
+.tox/
+.nosetools/
+.pytest_cache/
+.coverage
+htmlcov/
