@@ -22,8 +22,18 @@ jobs:
         with:
           node-version: "lts/*"
 
-      - name: Release
+      - name: Versioning
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # Install the core tool and all plugins defined in your .releaserc
+          npm install --no-save \
+            semantic-release \
+            @semantic-release/changelog \
+            @semantic-release/git \
+            @semantic-release/commit-analyzer \
+            @semantic-release/release-notes-generator \
+            @semantic-release/github
+          
+          # Now run it
           npx semantic-release
